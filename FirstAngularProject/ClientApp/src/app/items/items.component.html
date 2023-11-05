@@ -8,10 +8,22 @@
       <th>Name</th>
       <th>Price</th>
       <th>Description</th>
-      <th>Image</th>
+      <th width="180">
+        <button class='btn btn-primary'
+                (click)='toggleImage()'>
+          {{ displayImage ? 'Hide' : 'Show' }} Image
+        </button>
+      </th>
     </tr>
   </thead>
   <tbody>
+    <tr *ngFor='let item of items'>
+      <td>{{ item.ItemId }}</td>
+      <td>{{ item.Name }}</td>
+      <td>{{ item.Price }}</td>
+      <td>{{ item.Description }}</td>
+      <td *ngIf="displayImage"><img [src]=item.ImageUrl width="80" /></td>
+    </tr>
   </tbody>
 </table>
 
