@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
+import {IItem } from './item'
 
 @Component({
   selector: 'app-items-component',
   templateUrl: './items.component.html',
+  styleUrls:['./items.component.css']
 })
 
 export class ItemsComponent {
   displayImage: boolean = true;
   viewTitle: string = 'Table';
-  items: any[] = [
+  items: IItem[] = [
     {
       "ItemId": 1,
       "Name": "Pizza",

@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { ItemsComponent } from './items/items.component';
+import { ConvertToCurrency } from './shared/convert-to-currency.pipe';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ItemsComponent } from './items/items.component';
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    ItemsComponent
+    ItemsComponent,
+    ConvertToCurrency
 
   ],
   imports: [
