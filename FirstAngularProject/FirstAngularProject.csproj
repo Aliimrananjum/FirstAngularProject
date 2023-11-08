@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <None Include="Models\Item.cs" />
   </ItemGroup>
 
   <ItemGroup>
